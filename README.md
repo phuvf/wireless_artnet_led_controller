@@ -5,6 +5,12 @@ The wireless ArtNet LED controller will control up to 170 pixels of individually
 
 It drives a variety of individually addressable LED products (both strips and matrices) and connects to standard WiFi networks over which it receives ArtNet data.
 
+This repository contains:
+* Documentation for the product
+* Downloads of the latest software
+
+The device is based on Espressif's ESP32 microprocessor platform - note, however, that it will note run an a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
+
 ### Product visuals
 <img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500">
 <img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500">
@@ -76,7 +82,7 @@ Note: You don't need to hold this button down - the unit will reboot into setup 
 
 When in setup mode, the device will act as a WiFi access point, and create a wireless network named 'ArtNet LED controller xxxxx', where xxxxx the unit ID.
 
-Using a computer or phone, connect to this wireless network (there is no password) and browse to 192.168.0.1, where you'll be presented with a configuration screen.
+Using a computer or phone, connect to this wireless network (there is no password) and browse to **192.168.0.1**, where you'll be presented with a configuration screen.
 
 Here you can:
 
@@ -89,7 +95,9 @@ Once complete, hit 'Save and reboot'. The unit will re-configure itself and atte
 
 Note: the unit does not need to be in setup mode to connect to the config page. Just make sure you're on the same network as the unit, and substitute the 192.168.0.1 address for the IP address of the configured unit.
 
-Warning: There's no password on the web interface, so your unit could be re-configured by anyone on the same network.
+**Warning: There's no password on the web interface, so your unit could be re-configured by anyone on the same network.**
+
+This webpage also contain links to pages for manually controlling the LED and performing software updates.
 
 ### Test pattern
 
@@ -107,29 +115,14 @@ Similarly, if an established connection is lost during operation, the unit will 
 
 The on-board LED give status information for the device:
 
-Flash pattern
+| Flash pattern              | Description                         |
+|----------------------------|-------------------------------------|
+| Continuous on              | Unit is booting, or trying to connnect to WiFi. Reset button will not work. |
+| Long on, short off         | Unit is in setup mode.              |
+| Short flash every 3s       | Unit is in normal mode and has connected to WiFi, but is not receiving ArtNet data. |
+| Rapid irregular flickering | Unit receiving and processing ArtNet packets. Each flash is a packet being processed.|
+| Regular rapid flash, 10/s  | Unit has failed to connect to Wifi. |
 
-Description
-
-Continuous on
-
-Unit is booting, or trying to connnect to WiFi. Reset button will not work.
-
-Long on, short off
-
-Unit is in setup mode.
-
-Short flash every 3s
-
-Unit is in normal mode and has connected to WiFi, but is not receiving ArtNet data.
-
-Rapid irregular flickering
-
-Unit receiving and processing ArtNet packets. Each flash is a packet being processed.
-
-Regular rapid flash, 10/s
-
-Unit has failed to connect to Wifi.
 
 ### Credits
 
