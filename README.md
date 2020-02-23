@@ -93,11 +93,11 @@ Here you can:
 
 Once complete, hit 'Save and reboot'. The unit will re-configure itself and attempt to connect to the wireless network specified.
 
-Note: the unit does not need to be in setup mode to connect to the config page. Just make sure you're on the same network as the unit, and substitute the 192.168.0.1 address for the IP address of the configured unit.
-
-**Warning: There's no password on the web interface, so your unit could be re-configured by anyone on the same network.**
+*Note: the unit does not need to be in setup mode to connect to the config page. Just make sure you're on the same network as the unit, and substitute the 192.168.0.1 address for the IP address of the configured unit.*
 
 This webpage also contain links to pages for manually controlling the LED and performing software updates.
+
+**Warning: There's no password on the web interface, so your unit could be re-configured by anyone on the same network.**
 
 ### Test pattern
 
