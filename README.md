@@ -7,7 +7,7 @@ This repository contains:
 * Documentation for the product
 * Downloads of the latest complied software
 
-The device can be updated by end users via. it's on-board web interface - see below for details.
+The device can be updated by end users via. it's built-in web interface - see below for details.
 
 The Wireless ArtNet LED controller project is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
 
@@ -78,7 +78,7 @@ A single universe at 40fps consumes 0.2MBps.
 
 Unit setup is performed using an on-board web interface. To start, press the recessed reset button on the side.
 
-Note: You don't need to hold this button down - the unit will reboot into setup mode immediately. When the unit is connecting to WiFi, the reset button does not work - see below.
+*Note: You don't need to hold this button down - the unit will reboot into setup mode immediately. When the unit is connecting to WiFi, the reset button does not work - see below.*
 
 When in setup mode, the device will act as a WiFi access point, and create a wireless network named 'ArtNet LED controller xxxxx', where xxxxx the unit ID.
 
