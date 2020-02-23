@@ -6,8 +6,8 @@ The wireless ArtNet LED controller will control up to 170 pixels of individually
 It drives a variety of individually addressable LED products (both strips and matrices) and connects to standard WiFi networks over which it receives ArtNet data.
 
 ### Product visuals
-![3D view](https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg "3D view")
-![Plan view](https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png "Plan view")
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500">
 
 ### Physical
 
@@ -92,7 +92,7 @@ A single universe at 40fps consumes 0.2MBps.
 
 ### Unit setup
 
-![Web config view](https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png "Web config view")
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png" width="500">
 
 Unit setup is performed using an on-board web interface. To start, press the recessed reset button on the side.
 
