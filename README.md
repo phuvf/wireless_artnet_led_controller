@@ -7,13 +7,13 @@ This repository contains:
 * Documentation for the product
 * Downloads of the latest complied software
 
-The device can be updated by end users via. it's built-in web interface - see below for details.
+The device can be updated by end users using it's built-in web interface - see below for details.
 
 The Wireless ArtNet LED controller project is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
 
 ### Product visuals
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500">
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500" style="float: right;">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500" style="float: right;">
 
 ### Physical
 
@@ -64,9 +64,11 @@ The unit will drive one ArtNet universe of data (512 channels). That's 170 pixel
 
 Universes available range from 0 to 127 (technically 8 subnets of 16 universes each).
 
-The unit supports ArtNet polling, so if your ArtNet sender (e.g. lighting desk) supports device discovery, the controller will appear on the list of devices available on the network, with the ID 'ArtNet LED controller xxxxx'.
+The unit supports ArtNet polling (also called device discovery), so if your ArtNet sender (e.g. lighting desk) supports device discovery, the controller will appear on the list of devices available on the network, with the ID 'ArtNet LED controller xxxxx'.
 
 ArtNet packets can be unicast or broadcast to this device. If your sender supports polling correctly, it'll automatically unicast the correct subnet of data to the controller.
+
+### Refresh rate
 
 During operation, the acheivable frame rate will depend on the general WiFi environment. With good WiFi, the device can sustain 40fps without issue.
 
@@ -74,7 +76,7 @@ A single universe at 40fps consumes 0.2MBps.
 
 ### Unit setup
 
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png" width="500">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png" width="500" style="float: right;">
 
 Unit setup is performed using an on-board web interface. To start, press the recessed reset button on the side.
 
