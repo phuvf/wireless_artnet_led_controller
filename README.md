@@ -6,7 +6,8 @@ The wireless ArtNet LED controller will control up to 170 pixels of individually
 It drives a variety of individually addressable LED products (both strips and matrices) and connects to standard WiFi networks over which it receives ArtNet data.
 
 ### Product visuals
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![3D view](https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.png "3D view")
+![Plan view](https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png "Plan view")
 
 ### Physical
 
