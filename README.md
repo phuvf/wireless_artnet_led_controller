@@ -9,7 +9,7 @@ This repository contains:
 * Documentation for the product
 * Downloads of the latest software
 
-The device is based on Espressif's ESP32 microprocessor platform - note, however, that it will note run an a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
+The device is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
 
 ### Product visuals
 <img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500">
