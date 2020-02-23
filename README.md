@@ -1,4 +1,4 @@
-Wireless ArtNet LED controller: Documentation
+Wireless ArtNet LED controller
 =============================================
 
 The wireless ArtNet LED controller will control up to 170 pixels of individually addressable LEDs using the widely supported ArtNet protocol over standard WiFi networks.
@@ -32,49 +32,25 @@ If the CLK line is not required, just leave it disconnected.
 
 For each family, a range of colour orders are available:
 
-Type
-
-Notes
-
-NeoPixel RGB
-
-NeoPixel RBG
-
-NeoPixel GRB
-
-Most common option
-
-NeoPixel BRG
-
-NeoPixel RGBW
-
-NeoPixel GRBW
-
-DotStar RGB
-
-DotStar RBG
-
-DotStar GRB
-
-DotStar GBR
-
-DotStar BGR
-
-Most common option
-
-DotStar LRGB
-
-L = global dimmer channel, Luminance
-
-DotStar LRBG
-
-DotStar LGRB
-
-DotStar LGBR
-
-DotStar LBRG
-
-DotStar LBGR
+| Type          | Notes                                |
+|---------------|--------------------------------------|
+| NeoPixel RGB  |                                      |
+| NeoPixel RBG  |                                      |
+| NeoPixel GRB  | Most common option                   |
+| NeoPixel BRG  |                                      |
+| NeoPixel RGBW |                                      |
+| NeoPixel GRBW |                                      |
+| DotStar RGB   |                                      |
+| DotStar RBG   |                                      |
+| DotStar GRB   |                                      |
+| DotStar GBR   |                                      |
+| DotStar BGR   | Most common option                   |
+| DotStar LRGB  | L = global dimmer channel, Luminance |
+| DotStar LRBG  |                                      |
+| DotStar LGRB  |                                      |
+| DotStar LGBR  |                                      |
+| DotStar LBRG  |                                      |
+| DotStar LBGR  |                                      |
 
 ### ArtNet support
 
@@ -158,3 +134,4 @@ Unit has failed to connect to Wifi.
 ### Credits
 
 This unit uses the excellent [NeoPixelBus](https://github.com/Makuna/NeoPixelBus) library by Makuna.
+Art-Net™ is a trademark of Artistic Licence Holdings Ltd.
