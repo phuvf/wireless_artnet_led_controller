@@ -1,15 +1,15 @@
 Wireless ArtNet LED controller
 =============================================
 
-The wireless ArtNet LED controller will control up to 170 pixels of individually addressable LEDs using the widely supported ArtNet protocol over standard WiFi networks.
-
-It drives a variety of individually addressable LED products (both strips and matrices) and connects to standard WiFi networks over which it receives ArtNet data.
+The wireless ArtNet LED controller is a small black box that can control up to 170 pixels of individually addressable LEDs using the widely supported ArtNet protocol over standard WiFi networks.
 
 This repository contains:
 * Documentation for the product
-* Downloads of the latest software
+* Downloads of the latest complied software
 
-The device is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
+The device can be updated by end users via. it's on-board web interface - see below for details.
+
+The Wireless ArtNet LED controller project is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
 
 ### Product visuals
 <img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500">
