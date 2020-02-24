@@ -12,8 +12,8 @@ The device can be updated by end users using it's built-in web interface - see b
 The Wireless ArtNet LED controller project is based on Espressif's ESP32 microprocessor platform - note, however, that it will not run on a plain vanilla ESP32. If you're interested in buying some controllers, please email me: <nick@zinc.uk.com>.
 
 ### Product visuals
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500" style="float: right;">
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500" style="float: right;">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/box.jpg" width="500" >
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/plan.png" width="500">
 
 ### Physical
 
@@ -45,7 +45,7 @@ For each family, a range of colour orders are available:
 | NeoPixel GRB  | Most common option                   |
 | NeoPixel BRG  |                                      |
 | NeoPixel RGBW |                                      |
-| NeoPixel GRBW |                                      |
+| NeoPixel GRBW | Most common option                   |
 | DotStar RGB   |                                      |
 | DotStar RBG   |                                      |
 | DotStar GRB   |                                      |
@@ -68,6 +68,8 @@ The unit supports ArtNet polling (also called device discovery), so if your ArtN
 
 ArtNet packets can be unicast or broadcast to this device. If your sender supports polling correctly, it'll automatically unicast the correct subnet of data to the controller.
 
+Irrespective of the actual colour order of your LED strips (see table above), the device will always present as an RGB (or RGBW) fixture to ArtNet.
+
 ### Refresh rate
 
 During operation, the acheivable frame rate will depend on the general WiFi environment. With good WiFi, the device can sustain 40fps without issue.
@@ -76,7 +78,7 @@ A single universe at 40fps consumes 0.2MBps.
 
 ### Unit setup
 
-<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png" width="500" style="float: right;">
+<img src="https://github.com/phuvf/wireless_artnet_led_controller/blob/master/img/interface-ipad.png" width="500">
 
 Unit setup is performed using an on-board web interface. To start, press the recessed reset button on the side.
 
@@ -103,7 +105,7 @@ This webpage also contain links to pages for manually controlling the LED and pe
 
 ### Test pattern
 
-On boot, the unit will display a test pattern on connected LEDs in the order red-green-blue. It'll then hold on blue until it has estalished a wireless connection.
+On boot, the unit will display a test pattern on connected LEDs in the order red-green-blue(-white). It'll then hold on blue (or white) until it has estalished a wireless connection.
 
 This helps in determining the correct colour order for the LEDs connected.
 
@@ -117,14 +119,16 @@ Similarly, if an established connection is lost during operation, the unit will 
 
 The on-board LED give status information for the device:
 
-| Flash pattern              | Description                         |
-|----------------------------|-------------------------------------|
-| Continuous on              | Unit is booting, or trying to connnect to WiFi. Reset button will not work. |
-| Long on, short off         | Unit is in setup mode.              |
-| Short flash every 3s       | Unit is in normal mode and has connected to WiFi, but is not receiving ArtNet data. |
-| Rapid irregular flickering | Unit receiving and processing ArtNet packets. Each flash is a packet being processed.|
-| Regular rapid flash, 10/s  | Unit has failed to connect to Wifi. |
+| Flash pattern              | Description                                                                           |
+|----------------------------|---------------------------------------------------------------------------------------|
+| Continuous on              | Unit is booting, or trying to connnect to WiFi. Reset button will not work.           |
+| Long on, short off         | Unit is in setup mode.                                                                |
+| Short flash every 3s       | Unit is in normal mode and has connected to WiFi, but is not receiving ArtNet data.   |
+| Rapid irregular flickering | Unit receiving and processing ArtNet packets. Each flash is a packet being processed. |
+| Regular rapid flash, 10/s  | Unit has failed to connect to Wifi.                                                   |
 
+### Further details
+ If you'd like to know more, please email me: <nick@zinc.uk.com>.
 
 ### Credits
 
